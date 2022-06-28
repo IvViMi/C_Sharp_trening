@@ -1,9 +1,9 @@
 ﻿Console.Clear();
 //Console.SetCursorPosition(10, 4);
 //Console.WriteLine("+");
-int xa = 1, ya = 1,
-    xb = 1, yb = 10,
-    xc = 15, yc = 10;
+int xa = 1, ya = 1, // xa = 40, ya = 1
+    xb = 1, yb = 10, // xb = 1, yb = 30
+    xc = 15, yc = 10; // xc = 80, yc = 30
 
 Console.SetCursorPosition(xa, ya);
 Console.WriteLine("+");
@@ -19,7 +19,7 @@ int x = xa, y = xb;
 int count = 0;
 
 while(count < 10000) // должно быть фрактальное изображение треугольник Серпинского (https://elementy.ru/posters/fractals/Sierpinski)
-// но проблемы с размерами консоли у леново т470, а на макепро работает >:(
+// но проблемы с размерами консоли у леново т470, а на макепро работает
 {
     int what = new Random().Next(0, 3); // [0;3) 0 1 2
     if(what == 0)
